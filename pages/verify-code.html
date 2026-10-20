@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إتقان | رمز التحقق</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/motion.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/features.css">
+</head>
+
+<body data-page="verify">
+  <div class="ax-page">
+    <svg class="ax-waves" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 640C240 560 420 760 720 680s520-160 720-60" fill="none" stroke="#c9d4ff" stroke-width="1.5" />
+      <path d="M0 700C260 620 460 820 760 740s500-140 680-40" fill="none" stroke="#d6defe" stroke-width="1.5" />
+    </svg>
+    <button class="lang-toggle ax-lang" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z" />
+      </svg>English</button>
+    <main class="ax-main">
+      <div class="ax-card-col">
+        <div class="ax-card">
+          <svg class="ax-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2.5 3 8h18z" fill="currentColor" fill-opacity=".15" />
+            <path d="M3 21.5h18M5.5 18v-7.5M9.5 18v-7.5M14.5 18v-7.5M18.5 18v-7.5M4 18h16" />
+          </svg>
+          <div class="ax-system">نظام إدارة المعاملات الإلكترونية الذكي</div>
+          <h1 class="ax-title">أدخل رمز التحقق</h1>
+          <p class="ax-desc">أرسلنا رمزاً من 6 أرقام إلى <b id="vc-email">—</b></p>
+          <form id="verify-form" novalidate>
+            <div class="ax-field"><label class="ax-sr" for="vc-code">رمز التحقق</label>
+              <div class="ax-input"><input type="text" id="vc-code" name="code" class="ax-code" inputmode="numeric"
+                  maxlength="6" placeholder="••••••" autocomplete="one-time-code" required></div>
+              <div class="ax-error" role="alert"></div>
+            </div>
+            <button type="submit" class="ax-submit">تحقق</button>
+            <button type="button" id="vc-resend" class="ax-linkbtn" disabled>إعادة إرسال الرمز</button>
+            <div id="vc-note" class="ax-note" role="status" hidden></div>
+          </form>
+          <p class="ax-foot"><a href="forgot-password.html" class="ax-link" data-ax-link>تغيير البريد الإلكتروني</a></p>
+        </div>
+      </div>
+      <div class="ax-scene-col">
+        <div class="ax-scene" data-ax-scene aria-hidden="true"></div>
+      </div>
+    </main>
+    <footer class="ax-copy">جميع الحقوق محفوظة © <span data-year>2026</span></footer>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/motion.js"></script>
+  <script src="../js/auth-scene.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/forgot.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إتقان | إنشاء حساب جديد</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/motion.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body data-page="register">
+  <div class="ax-page">
+    <svg class="ax-waves" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 640C240 560 420 760 720 680s520-160 720-60" fill="none" stroke="#c9d4ff" stroke-width="1.5" />
+      <path d="M0 700C260 620 460 820 760 740s500-140 680-40" fill="none" stroke="#d6defe" stroke-width="1.5" />
+    </svg>
+    <button class="lang-toggle ax-lang" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z" />
+      </svg>English</button>
+    <main class="ax-main">
+      <div class="ax-card-col">
+        <div class="ax-card">
+          <svg class="ax-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2.5 3 8h18z" fill="currentColor" fill-opacity=".15" />
+            <path d="M3 21.5h18M5.5 18v-7.5M9.5 18v-7.5M14.5 18v-7.5M18.5 18v-7.5M4 18h16" />
+          </svg>
+          <div class="ax-system">نظام إدارة المعاملات الإلكترونية الذكي</div>
+          <h1 class="ax-title">إنشاء حساب جديد</h1>
+          <form id="register-form" novalidate>
+            <div class="ax-field"><label class="ax-sr" for="fullname">الاسم الكامل</label>
+              <div class="ax-input"><svg class="ax-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg><input type="text" id="fullname" name="fullname" placeholder="الاسم الكامل" autocomplete="name"
+                  data-rule="fullname" required></div>
+              <div class="ax-error" role="alert"></div>
+            </div>
+            <div class="ax-field"><label class="ax-sr" for="reg-email">اسم المستخدم أو البريد الإلكتروني</label>
+              <div class="ax-input"><svg class="ax-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg><input type="text" id="reg-email" name="email" placeholder="اسم المستخدم أو البريد الإلكتروني"
+                  autocomplete="username" data-rule="user" required></div>
+              <div class="ax-error" role="alert"></div>
+            </div>
+            <div class="ax-field"><label class="ax-sr" for="phone">رقم الهاتف</label>
+              <div class="ax-input"><svg class="ax-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <rect x="7" y="2" width="10" height="20" rx="2" />
+                  <path d="M11 18h2" />
+                </svg><input type="tel" id="phone" name="phone" placeholder="رقم الهاتف" autocomplete="tel"
+                  data-rule="phone" required></div>
+              <div class="ax-error" role="alert"></div>
+            </div>
+            <div class="ax-field"><label class="ax-sr" for="reg-password">كلمة المرور</label>
+              <div class="ax-input"><svg class="ax-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <rect x="4" y="11" width="16" height="10" rx="2" />
+                  <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                </svg><input type="password" id="reg-password" name="password" placeholder="كلمة المرور"
+                  autocomplete="new-password" data-rule="newpassword" required><button type="button" class="ax-toggle"
+                  aria-label="إظهار كلمة المرور"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg></button></div>
+              <div class="ax-error" role="alert"></div>
+            </div>
+            <div class="ax-field"><label class="ax-sr" for="reg-confirm">تأكيد كلمة المرور</label>
+              <div class="ax-input"><svg class="ax-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <rect x="4" y="11" width="16" height="10" rx="2" />
+                  <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                </svg><input type="password" id="reg-confirm" name="confirm" placeholder="تأكيد كلمة المرور"
+                  autocomplete="new-password" data-rule="confirm" required><button type="button" class="ax-toggle"
+                  aria-label="إظهار كلمة المرور"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg></button></div>
+              <div class="ax-error" role="alert"></div>
+            </div>
+            <button type="submit" class="ax-submit">إنشاء حساب</button>
+          </form>
+          <p class="ax-foot">لديك حساب؟ <a href="login.html" class="ax-link" data-ax-link>تسجيل الدخول</a></p>
+        </div>
+      </div>
+      <div class="ax-scene-col">
+        <div class="ax-scene" data-ax-scene aria-hidden="true"></div>
+      </div>
+    </main>
+    <footer class="ax-copy">جميع الحقوق محفوظة <span data-year>2026</span></footer>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/motion.js"></script>
+  <script src="../js/auth-scene.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+
+</html>
